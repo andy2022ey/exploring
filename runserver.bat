@@ -1,0 +1,1 @@
+cmd /k "D: && cd D:\exploring\venv\Scripts && activate && cd D:\exploring && python manage.py runserver"

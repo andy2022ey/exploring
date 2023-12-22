@@ -1,0 +1,1 @@
+cmd /k "cd /d D:\exploring\frontend && npm run dev"
