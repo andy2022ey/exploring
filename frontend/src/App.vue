@@ -1,295 +1,66 @@
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, reactive, onMounted } from 'vue';
 import axios from 'axios';
+import Header from './components/Header.vue';
+import Sidebar from './components/Sidebar.vue';
+import Content from './components/Content.vue';
 
 const items = ref([]);
-const error = ref(null);
+const selectedContent = ref('');
+const themes = ref({});
 
-
-onMounted(async () => {
-  try {
-    const response = await axios.get('http://127.0.0.1:8000/items/');
-    items.value = response.data;
-  } catch (err) {
-    error.value = err.message;
+const loadThemes = async () => {
+  const response = await fetch('content.json'); // 假设文件位于public目录
+  if (response.ok) {
+    const data = await response.json();
+    themes.value = data;
+    console.log('Themes loaded:', themes.value);
+  } else {
+    console.error('Failed to load themes:', response.statusText);
   }
-});
+};
+
+onMounted(loadThemes);
+
+const handleThemeSelected = (theme) => {
+  items.value = themes[theme];
+  selectedContent.value = items.value[0]?.content || ''; // 使用可选链和空值合并操作符
+};
+
+const handleItemSelected = (item) => {
+  selectedContent.value = item.content;
+};
+
+//const items = ref([]);
+//const error = ref(null);
+//onMounted(async () => {
+//  try {
+//    const response = await axios.get('http://127.0.0.1:8000/items/');
+//    items.value = response.data;
+//  } catch (err) {
+//    error.value = err.message;
+//  }
+// });
 </script>
 
 
 <template>
-  <div id="page-wrapper">
 
-<!-- Header -->
-  <section id="header">
+  <div id="app">
+    <Header @themeSelected="handleThemeSelected" />
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <!-- Logo -->
-            <h1><a href="index.html" id="logo">第1号当铺</a></h1>
-
-          <!-- Nav -->
-            <nav id="nav">
-              <a href="index.html">主页</a>
-              <a href="twocolumn1.html">产品</a>
-              <a href="threecolumn.html">博客</a>
-              <a href="twocolumn1.html">知识库</a>
-              <a href="twocolumn2.html">读书</a>
-              <a href="onecolumn.html">赞助</a>
-              <a href="twocolumn2.html">关于我</a>
-            </nav>
-
-        </div>
-      </div>
+      <Sidebar :items="items" @itemSelected="handleItemSelected" />
+      <Content :content="selectedContent" />
     </div>
-    <div id="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-12-medium">
-
-            <!-- Banner Copy -->
-              <p>一间非比寻常的当铺，</p>
-              <p>典当时间，售卖自由。</p>
-          </div>
-          <div class="col-6 col-12-medium imp-medium">
-
-            <!-- Banner Image -->
-              <a href="#" class="bordered-feature-image"><img src="./images/banner.png" alt="" /></a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Features -->
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-3 col-6-medium col-12-small">
-
-          <!-- Feature #1 -->
-            <section>
-              <a href="#" class="bordered-feature-image"><img src="./images/pic01.jpg" alt="" /></a>
-              <h2>Welcome to Halcyonic</h2>
-              <p>
-                This is <strong>Halcyonic</strong>, a free site template
-                by <a href="http://twitter.com/ajlkn">AJ</a> for
-                <a href="http://html5up.net">HTML5 UP</a>. It's responsive,
-                built on HTML5 + CSS3, and includes 5 unique page layouts.
-              </p>
-            </section>
-
-        </div>
-        <div class="col-3 col-6-medium col-12-small">
-
-          <!-- Feature #2 -->
-            <section>
-              <a href="#" class="bordered-feature-image"><img src="./images/pic02.jpg" alt="" /></a>
-              <h2>Responsive You Say?</h2>
-              <p>
-                Yes! Halcyonic is built to be fully responsive so it looks great
-                at every screen size, from desktops to tablets to mobile phones.
-              </p>
-            </section>
-
-        </div>
-        <div class="col-3 col-6-medium col-12-small">
-
-          <!-- Feature #3 -->
-            <section>
-              <a href="#" class="bordered-feature-image"><img src="./images/pic03.jpg" alt="" /></a>
-              <h2>License Info</h2>
-              <p>
-                Halcyonic is licensed under the <a href="http://html5up.net/license">CCA</a> license,
-                so use it for personal/commercial use as much as you like (just keep
-                our credits intact).
-              </p>
-            </section>
-
-        </div>
-        <div class="col-3 col-6-medium col-12-small">
-
-          <!-- Feature #4 -->
-            <section>
-              <a href="#" class="bordered-feature-image"><img src="./images/pic04.jpg" alt="" /></a>
-              <h2>Volutpat etiam aliquam</h2>
-              <p>
-                Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse
-                eu varius nibh. Suspendisse vitae magna mollis.
-              </p>
-            </section>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Content -->
-  <section id="content">
-    <div class="container">
-      <div class="row aln-center">
-        <div class="col-4 col-12-medium">
-
-          <!-- Box #1 -->
-            <section>
-              <header>
-                <h2>愿景、规划与策略</h2>
-              </header>
-              <a href="#" class="feature-image"><img src="./images/pic05.jpg" alt="" /></a>
-              <p>
-                Duis neque nisi, dapibus sed mattis quis, rutrum accumsan magna sed.
-                Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis
-                justo facilisis quis. Sed sagittis amet lorem ipsum.
-              </p>
-            </section>
-
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-
-          <!-- Box #2 -->
-            <section>
-              <header>
-                <h2>近期发布</h2>
-              </header>
-              <ul class="check-list">
-                <li>Sed mattis quis rutrum accum</li>
-                <li>Eu varius nibh suspendisse lorem</li>
-                <li>Magna eget odio amet mollis justo</li>
-                <li>Facilisis quis sagittis mauris</li>
-                <li>Amet tellus gravida lorem ipsum</li>
-              </ul>
-            </section>
-
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-
-          <!-- Box #3 -->
-            <section>
-              <header>
-                <h2>魔法时刻</h2>
-              </header>
-              <ul class="quote-list">
-                <li>
-                  <img src="./images/pic06.jpg" alt="" />
-                  <p>"Neque nisidapibus mattis"</p>
-                  <span>Jane Doe, CEO of UntitledCorp</span>
-                </li>
-                <li>
-                  <img src="./images/pic07.jpg" alt="" />
-                  <p>"Lorem ipsum consequat!"</p>
-                  <span>John Doe, President of FakeBiz</span>
-                </li>
-                <li>
-                  <img src="./images/pic08.jpg" alt="" />
-                  <p>"Magna veroeros amet tempus"</p>
-                  <span>Mary Smith, CFO of UntitledBiz</span>
-                </li>
-              </ul>
-            </section>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Footer -->
-  <section id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-8 col-12-medium">
-
-          <!-- Links -->
-            <section>
-              <h2>Links to Important Stuff</h2>
-              <div>
-                <div class="row">
-                  <div class="col-3 col-12-small">
-                    <ul class="link-list last-child">
-                      <li><a href="#">Neque amet dapibus</a></li>
-                      <li><a href="#">Sed mattis quis rutrum</a></li>
-                      <li><a href="#">Accumsan suspendisse</a></li>
-                      <li><a href="#">Eu varius vitae magna</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-3 col-12-small">
-                    <ul class="link-list last-child">
-                      <li><a href="#">Neque amet dapibus</a></li>
-                      <li><a href="#">Sed mattis quis rutrum</a></li>
-                      <li><a href="#">Accumsan suspendisse</a></li>
-                      <li><a href="#">Eu varius vitae magna</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-3 col-12-small">
-                    <ul class="link-list last-child">
-                      <li><a href="#">Neque amet dapibus</a></li>
-                      <li><a href="#">Sed mattis quis rutrum</a></li>
-                      <li><a href="#">Accumsan suspendisse</a></li>
-                      <li><a href="#">Eu varius vitae magna</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-3 col-12-small">
-                    <ul class="link-list last-child">
-                      <li><a href="#">Neque amet dapibus</a></li>
-                      <li><a href="#">Sed mattis quis rutrum</a></li>
-                      <li><a href="#">Accumsan suspendisse</a></li>
-                      <li><a href="#">Eu varius vitae magna</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-        </div>
-        <div class="col-4 col-12-medium imp-medium">
-
-          <!-- Blurb -->
-            <section>
-              <h2>An Informative Text Blurb</h2>
-              <p>
-                Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
-                varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
-                dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
-                lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
-              </p>
-            </section>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- Copyright -->
-  <div id="copyright">
-    &copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
   </div>
 
-</div>
-
-
-  <div >
-    <div>
-    <h1>Hello World!</h1>
-    </div>
-    <br>
-    <ul>
-      <li v-for="item in items" :key="item.id">
-        {{ item.title }}
-      </li>
-    </ul>
-    <ul>
-      <li v-for="item in items" :key="item.id">
-        {{ item.body }}
-      </li>
-    </ul>
-    <div v-if="error">
-      {{ error }}
-      </div>
-  </div>
 </template>
 
 
 <style>
-@import './assets/css/main.css';
+  .container {
+    display: flex;
+    width: 100%; /* 可根据需要调整 */
+  }
 </style>

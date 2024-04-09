@@ -1,0 +1,1440 @@
+.pageNav {
+    background: #FFFFFF !important;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+
+.banner .bg {
+    width: 100%;
+    display: block;
+}
+
+.banner .box {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.banner h5 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.banner span {
+    display: block;
+    border-left: 5px solid #C4D963;
+    font-size: 29px;
+    color: #C4D963;
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+.banner .search {
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+    width: 1200px;
+}
+
+.banner .search input {
+    width: calc(100% - 200px);
+    height: 80px;
+    background: #FFFFFF;
+    opacity: 0.88;
+    line-height: 80px;
+    border: none;
+    font-size: 18px;
+    padding-left: 55px;
+    box-sizing: border-box;
+}
+
+.banner .search button {
+    width: 200px;
+    height: 80px;
+    background: #18663A;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.tool {
+    width: 100%;
+    height: 86px;
+    line-height: 86px;
+    background: linear-gradient(to right, #18663A 0%, #18663A 30%, white 30%, white 100%);
+}
+
+.tool .content {
+    display: flex;
+}
+
+.tool a:first-child {
+    padding-left: 60px;
+}
+
+.tool a {
+    display: block;
+    background: #18663A;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 50px 0 10px;
+    margin: 0;
+}
+
+.tool a.active {
+    color: #C4D963;
+}
+
+.aboutZZ {
+    width: 100%;
+}
+
+.aboutZZ .introduc {
+    width: 100%;
+    text-align: center;
+    background: url(../images/bg_jitun_jianjie.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    padding: 70px 0;
+}
+
+.aboutZZ .introduc h5 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #231815;
+}
+
+.aboutZZ .introduc img {
+    width: 160px;
+    margin: 40px 0 37px;
+}
+
+.aboutZZ .introduc .text {
+    text-indent: 32px;
+    text-align: justify;
+    line-height: 22px;
+    font-size: 16px;
+    color: #646464;
+}
+
+.aboutZZ .introduc .text p {
+    margin-bottom: 30px;
+}
+
+.aboutZZ .development {
+    width: 100%;
+    background: url(../images/bg_fazhan_licheng.jpeg) no-repeat bottom;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.aboutZZ .development h5 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.aboutZZ .development .swiper-father {
+    width: 75%;
+    margin: 1.47rem auto;
+    position: relative;
+}
+
+.aboutZZ .development .swiper-father .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    right: -35px;
+    left: auto;
+    color: #fff;
+    background: url(../images/btn_right_huadong@2x.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.aboutZZ .development .swiper-father .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+    left: -35px;
+    right: auto;
+    color: #fff;
+    background: url(../images/btn_left_huadong@2x.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.aboutZZ .development .swiper-father .swiper-button-prev:after,
+.aboutZZ .development .swiper-father .swiper-rtl .swiper-button-next:after {
+    content: '';
+}
+
+.aboutZZ .development .swiper-father .swiper-button-next:after,
+.aboutZZ .development .swiper-father .swiper-rtl .swiper-button-prev:after {
+    content: '';
+}
+
+.aboutZZ .development img {
+    display: block;
+}
+
+.aboutZZ .development .hr {
+    width: 100%;
+    height: 2px;
+    background: #C4D963;
+    opacity: 0.5;
+}
+
+.aboutZZ .development .swiper-slide>div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aboutZZ .development .swiper-slide .top {
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: space-around;
+}
+
+.aboutZZ .development .swiper-slide .top .box {
+    padding-bottom: 60px;
+}
+
+.aboutZZ .development .swiper-slide .top .box:last-child {
+    width: 10px;
+}
+
+.aboutZZ .development .swiper-slide .top .solid {
+    position: absolute;
+    left: 0;
+    /* top: 23px; */
+    width: 23px;
+    height: 94%;
+    bottom: -8px;
+    border-top: 1px solid #C4D963;
+    border-left: 1px solid #C4D963;
+}
+
+.aboutZZ .development .swiper-slide .top .solid::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    background: #C4D963;
+    border-radius: 50%;
+}
+
+.aboutZZ .development .swiper-slide .bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.aboutZZ .development .swiper-slide .bottom .box {
+    padding-top: 60px;
+}
+
+.aboutZZ .development .swiper-slide .bottom .box:first-child {
+    width: 10px;
+}
+
+.aboutZZ .development .swiper-slide .bottom .solid {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 23px;
+    height: 177px;
+    border-bottom: 1px solid #C4D963;
+    border-left: 1px solid #C4D963;
+}
+
+.aboutZZ .development .swiper-slide .bottom .solid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    background: #C4D963;
+    border-radius: 50%;
+}
+
+.aboutZZ .development .box {
+    width: 240px;
+    position: relative;
+    padding-left: 20px;
+    height: 180px;
+    padding-top: 15px;
+}
+
+.aboutZZ .development .box span {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #C4D963;
+    padding: 0 13px;
+    background: #18663A;
+    margin-bottom: 20px;
+}
+
+.aboutZZ .development .box span em {
+    font-size: 22px;
+}
+
+.aboutZZ .development .box p {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.aboutZZ .structure {
+    width: 100%;
+    text-align: center;
+    margin: 95px 0 140px;
+}
+
+.aboutZZ .structure h5 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #231815;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.aboutZZ .structure img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.plate {
+    width: 100%;
+    margin-top: 105px;
+}
+
+.plate .box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 105px;
+    display: flex;
+}
+
+.plate .box .left {
+    background: url(../images/bg_jituan_bankuai_jinse.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    padding: 95px 75px;
+}
+
+.plate .box .tit {
+    font-size: 40px;
+    color: #714503;
+    position: relative;
+}
+
+.plate .box .tit::after {
+    content: "";
+    width: 25px;
+    height: 5px;
+    position: absolute;
+    top: 117%;
+    left: 0;
+    background: #975D05;
+}
+
+.plate .box img {
+    display: block;
+    width: 480px;
+    height: 100%;
+}
+
+.plate .box .text {
+    font-size: 18px;
+    margin-top: 60px;
+    line-height: 36px;
+    color: #805F2D;
+    text-align: justify;
+}
+
+.plate .box:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.plate .box:nth-child(2n+2) .left {
+    background: url(../images/bg_jituan_bankuai_huise.jpeg) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.plate .box:nth-child(2n+2) .left .tit {
+    color: #18663A;
+}
+
+.plate .box:nth-child(2n+2) .left .text {
+    color: #231815;
+}
+
+.plate .box:nth-child(2n+2) .left .tit::after {
+    background: #18663A;
+}
+
+.plate .box:nth-child(3n+3) .left {
+    background: url(../images/bg_jituan_bankuai_green.jpeg) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.plate .box:nth-child(3n+3) .left .tit {
+    color: #C4D963;
+}
+
+.plate .box:nth-child(3n+3) .left .text {
+    color: #FFFFFF;
+}
+
+.plate .box:nth-child(3n+3) .left .tit::after {
+    background: #C4D963;
+}
+
+.responsPlanting {
+    width: 100%;
+    margin: 30px auto;
+}
+
+.responsPlanting .swiper-father {
+    position: relative;
+    margin-top: 100px;
+}
+
+.responsPlanting .swiper-father .intoSwiper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.responsPlanting .swiper-father .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    right: -35px;
+    top: 40%;
+    left: auto;
+    color: #fff;
+    background: url(../images/btn_right_huadong@2x.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.responsPlanting .swiper-father .swiper-button-prev {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    left: -35px;
+    right: auto;
+    color: #fff;
+    background: url(../images/btn_left_huadong@2x.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.responsPlanting .swiper-father .swiper-button-next:after,
+.responsPlanting .swiper-father .swiper-button-prev:after {
+    content: '';
+}
+
+.responsPlanting .social {
+    margin-top: 114px;
+}
+
+.responsPlanting .social h5 {
+    font-size: 48px;
+    color: #231815;
+    margin-bottom: 46px;
+    text-align: center;
+}
+
+.responsPlanting .social p {
+    width: 910px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #747474;
+    line-height: 24px;
+    text-indent: 32px;
+    text-align: center;
+}
+
+.responsPlanting .social .intoSwiper img {
+    width: 100%;
+    height: 240px;
+}
+
+.responsPlanting .social .intoSwiper span {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: #231815;
+    margin-top: 26px;
+}
+
+.responsPlanting .education {
+    margin-top: 160px;
+}
+
+.responsPlanting .education .top {
+    display: flex;
+}
+
+.responsPlanting .education .top img {
+    width: 640px;
+    height: 468px;
+    display: block;
+}
+
+.responsPlanting .education .top .textarea {
+    width: calc(100% - 640px);
+    padding: 55px 40px;
+    background: url(../images/bg_juanzi_zhuxue.jpeg) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.responsPlanting .education .top h4 {
+    font-size: 48px;
+    color: #C4D963;
+    margin-bottom: 35px;
+}
+
+.responsPlanting .education .top p {
+    font-size: 16px;
+    color: #FCFCFC;
+    line-height: 24px;
+    margin-top: 20px;
+    text-indent: 2em;
+}
+
+.responsPlanting .education .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.responsPlanting .swiper-father .educSwiper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.responsPlanting .education .bottom .educSwiper img {
+    width: 216px;
+    height: 180px;
+}
+
+.responsPlanting .education .bottom .educSwiper span {
+    display: block;
+    font-size: 18px;
+    color: #231815;
+    margin-top: 22px;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.responsPlanting .reportBox {
+    width: 100%;
+    margin-top: 1.33rem;
+}
+
+.responsPlanting .reportBox h4 {
+    font-size: 0.61rem;
+    color: #231815;
+    margin-bottom: 0.49rem;
+    text-align: center;
+}
+
+.responsPlanting .reportBox .flex {
+    display: flex;
+}
+
+.responsPlanting .reportBox .flex .img {
+    display: block;
+    width: 640px;
+    height: 468px;
+}
+
+.responsPlanting .reportBox .flex .report {
+    width: calc(100% - 640px);
+    margin: 0;
+    position: relative;
+    background: url(../images/bg_shehui_zeren_baogao@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    padding: 65px;
+}
+
+.responsPlanting .reportBox .flex .report h5 {
+    font-size: 80px;
+    color: #fff;
+}
+
+.responsPlanting .reportBox .flex .report p {
+    font-size: 54px;
+    color: #7F510C;
+    margin-bottom: 0;
+}
+
+.responsPlanting .reportBox .flex .report span {
+    font-size: 26px;
+    color: #7F510C;
+    word-break: break-all;
+}
+
+.responsPlanting .reportBox .flex .upload {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 65px;
+    bottom: 65px;
+}
+
+.responsPlanting .reportBox .flex .upload img {
+    width: 38px;
+    display: block;
+}
+
+.responsPlanting .reportBox .flex .upload em {
+    color: #18663A;
+    font-size: 18px;
+    padding-left: 18px;
+}
+
+.responsPlanting .reportBox .educationSwiper .report {
+    background: url(../images/bg_shehui_zeren_baogao_huise@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.responsPlanting .reportBox .educationSwiper .report h5 {
+    font-size: 60px;
+    color: #18663A;
+}
+
+.responsPlanting .reportBox .educationSwiper .report p {
+    font-size: 26px;
+    color: #231815;
+}
+
+.responsPlanting .reportBox .educationSwiper .report span {
+    font-size: 16px;
+    color: #515151;
+    word-break: break-all;
+}
+
+.responsPlanting .reportBox .swiper-button-next {
+    right: -65px;
+}
+
+.responsPlanting .reportBox .swiper-button-prev {
+    left: -65px;
+}
+
+.recruitment {
+    margin: 0.56rem;
+}
+
+.recruitment .content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recruitment .content::after {
+    content: "";
+    flex: auto;
+    /* 或者flex: 1 */
+}
+
+.recruitment .item:nth-child(3n+2) {
+    margin-left: 30px;
+}
+
+.recruitment .item:nth-child(3n+3) {
+    margin-left: 30px;
+}
+
+.recruitment .item {
+    width: 400px;
+    height: 180px;
+    display: block;
+    background: url(../images/bg_zhaopin_zhiwei@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    padding: 45px;
+    box-sizing: border-box;
+    margin-bottom: 34px;
+}
+
+.recruitment .item div {
+    display: flex;
+    align-items: center;
+}
+
+.recruitment .item div img {
+    width: 24px;
+    height: 24px;
+}
+
+.recruitment .item div h5 {
+    font-size: 24px;
+    color: #231815;
+    margin-left: 17px;
+}
+
+.recruitment .item div span {
+    font-size: 16px;
+    color: #C49D62;
+}
+
+.recruitment .item div em {
+    font-size: 16px;
+    color: #919191;
+}
+
+.recruitment .item div:last-child {
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.recruitment .item div:last-child img {
+    width: 0.19rem;
+    height: 0.23rem;
+    margin-right: 0.11rem;
+}
+
+.recruitment button {
+    width: 190px;
+    height: 66px;
+    background: #0A7E3C;
+    border: none;
+    margin: 80px auto;
+    display: block;
+}
+
+.contactUs {
+    margin: 120px 0;
+    display: flex;
+    height: 720px;
+    align-items: center;
+}
+
+.contactUs .mapBox {
+    width: 800px;
+    height: 100%;
+}
+
+.contactUs .bottom {
+    width: calc(100% - 800px);
+    height: 100%;
+    background: url(../images/bg_lianxi_women_zuoce_beijing@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contactUs .bottom .tit {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 80px;
+    display: block;
+    padding-bottom: 24px;
+}
+
+.contactUs .tit:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 6px;
+    background: #fff;
+    left: 0;
+    bottom: 0;
+}
+
+.contactUs .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contactUs .item img {
+    width: 54px;
+    height: auto;
+    margin-right: 19px;
+}
+
+.contactUs .item span {
+    display: block;
+    margin-bottom: 0.13rem;
+    font-weight: 600;
+}
+
+.contactUs .tips {
+    text-align: left;
+    font-size: 16px;
+    color: #fff;
+    line-height: 0.44rem;
+    padding-top: 40px;
+    border-top: 1px solid #FFFFFF;
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+}
+
+.group {
+    padding-bottom: 0.67rem;
+}
+
+.group .meau {
+    width: 100%;
+    background: url(../images/bg_home_xinwen.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.group .meau .content {
+    display: flex;
+    align-items: center;
+}
+
+.group .meau .content .img {
+    width: 632px;
+    height: 397px;
+    margin-right: 60px;
+}
+
+.group .meau .item {
+    width: 100%;
+}
+
+.group .meau .item .date {
+    background: #FFFFFF;
+    display: inline-block;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.group .meau .item .date h5 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    color: #C49D62;
+}
+
+.group .meau .item .date span {
+    font-size: 14px;
+    color: #0F4928;
+    margin-top: 10px;
+}
+
+.group .meau .item .date p {
+    font-size: 16px;
+    color: #747474;
+    line-height: 34px;
+    margin-top: 30px;
+}
+
+.group .meau .item .infor {
+    display: grid;
+}
+
+.group .meau .item .infor h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28px;
+    color: #231815;
+}
+
+.group .meau .item .infor p {
+    font-size: 16px;
+    color: #747474;
+    margin: 33px 0;
+    line-height: 36px;
+}
+
+.group .meau {
+    background: url(../images/bg_zixun_list_dingbu@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    margin-bottom: 0;
+}
+
+.group .meau img {
+    width: 100%;
+}
+
+.group .meau .item {
+    margin-bottom: 0;
+}
+
+.group .meau h4 {
+    white-space: inherit !important;
+    line-height: 0.61rem;
+    font-weight: bold;
+}
+
+.group .meau p.ellipsis {
+    -webkit-line-clamp: 3;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.group .list {
+    margin-top: 0px !important;
+}
+
+.group .list .card {
+    width: 404px;
+    height: 436px;
+    background: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.group .media {
+    background: transparent;
+    height: auto;
+}
+
+.group .media .textcard {
+    background: url(../images/bg_jituan_bankuai_huise.jpeg) no-repeat center !important;
+    background-size: 100% 100%;
+}
+
+.group .media .list {
+    flex-wrap: wrap;
+}
+
+.group .media .list .mediacard img {
+    width: 404px !important;
+    height: 228px !important;
+    display: block;
+}
+
+.group .media .list .mediacard .infor {
+    padding: 23px 10px;
+}
+
+.group .media .list .mediacard .infor h5 {
+    /*
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;*/
+    font-size: 20px;
+    line-height: 27px;
+    color: #231815;
+    height: 54px;
+}
+
+.group .media .list .mediacard .infor p {
+    font-size: 16px;
+    color: #747474;
+    line-height: 30px;
+}
+
+.group .media .list .card small {
+    line-height: 1;
+}
+
+.group button {
+    font-size: 14px;
+    width: 190px;
+    height: 66px;
+    background: #0A7E3C;
+    margin: 75px auto 145px;
+    display: block;
+}
+
+.group button img {
+    width: 16px;
+}
+
+.article {
+    margin-top: 180px;
+}
+
+.article .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article .details {
+    width: 790px;
+    float: left;
+}
+
+.article .list {
+    width: 340px;
+    float: right;
+}
+
+.article .tit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto 50px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.article .tit h5 {
+    font-size: 32px;
+    color: #231815;
+    line-height: 40px;
+}
+
+.article .tit p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #747474;
+    margin-top: 35px;
+}
+
+.article .tit .left {
+    width: 644px;
+}
+
+.article .tit .date {
+    background: url(../images/bg_wenzhang_xiangqing_riqi@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 25px 20px;
+}
+
+.article .tit .date h4 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #C49D62;
+    line-height: 1;
+}
+
+.article .tit .date em {
+    font-size: 16px;
+    color: #0F4928;
+    margin-top: 15px;
+}
+
+.article .box {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 16px;
+    background: #F4F4F2;
+}
+
+.article .textarea {
+    font-size: 18px;
+    color: #646464;
+    line-height: 36px;
+}
+
+.article .textarea p {
+    text-indent: 2em;
+    margin-top: 1em;
+}
+
+.article .textarea img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.article .smalltit {
+    font-size: 34px;
+    color: #231815;
+    padding-left: 40px;
+    border-left: 8px solid #18663A;
+    margin-bottom: 45px;
+}
+
+.article .li {
+    padding: 30px 0;
+    margin: 0 48px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.article .li span {
+    display: block;
+    font-size: 16px;
+    color: #C49D62;
+    margin-bottom: 20px;
+}
+
+.article .li p {
+    font-size: 18px;
+    color: #231815;
+    line-height: 32px;
+}
+
+.article .report {
+    width: 100%;
+    background: url(../images/bg_wenzhang_xiangqing_shehui_zerenbaogao@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    margin: 32px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.article .report .left {
+    text-align: left;
+}
+
+.article .report h5 {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.article .report p {
+    font-size: 26px;
+    color: #7F510C;
+    margin: 20px 0 10px;
+}
+
+.article .report span {
+    font-size: 20px;
+    color: #7F510C;
+    opacity: 0.6;
+    word-break: break-all;
+}
+
+.article .report .search {
+    width: 90px;
+}
+
+.newsNotice .meau .firstItem {
+    width: 100%;
+    background: #ECECEC;
+    box-sizing: border-box;
+    padding: 50px 0;
+    margin: 75px 0;
+    display: flex;
+}
+
+.newsNotice .meau .firstItem img {
+    width: 286px;
+    height: 182px;
+}
+
+.newsNotice .meau .firstItem .date {
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.newsNotice .meau .firstItem .ellipsis {
+    -webkit-line-clamp: 3;
+}
+
+.newsNotice .meau .firstItem .infor {
+    width: 800px;
+}
+
+.newsNotice .meau .item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.newsNotice .meau .date {
+    background: #ECECEC;
+    padding: 10px 30px 10px 30px;
+}
+
+.newsNotice .meau .date h5 {
+    color: #D83535;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1;
+    color: #C49D62;
+}
+
+.newsNotice .meau .date span {
+    color: #747474;
+    font-size: 16px;
+    color: #18663A;
+    margin-top: 10px;
+}
+
+.newsNotice .meau .infor {
+    margin-left: 25px;
+    display: grid;
+}
+
+.newsNotice .meau .infor h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28px;
+    color: #231815;
+}
+
+.newsNotice .meau .infor p {
+    font-size: 14px;
+    color: #747474;
+    margin: 25px 0;
+    line-height: 26px;
+}
+
+.newsNotice .meau .item .date {
+    background: #ECECEC;
+}
+
+.newsNotice .meau .item h5 {
+    color: #D83535;
+}
+
+.newsNotice .meau .item span {
+    color: #747474;
+}
+
+.newsNotice button {
+    font-size: 14px;
+    width: 190px;
+    height: 66px;
+    background: #0A7E3C;
+    margin: 75px auto 145px;
+    display: block;
+}
+
+.newsNotice button img {
+    width: 16px;
+}
+
+.videoZone {
+    width: 100%;
+}
+
+.videoZone video {
+    width: 708px;
+    height: 446px;
+}
+
+.videoZone .topVideo {
+    background: url(../images/bg_meiti_zhongxin_shipin_list_dingbu@2x.jpeg) no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoZone .topVideo .bg {
+    width: 100%;
+}
+
+.videoZone .topVideo .content {
+    padding: 0.77rem 0 2.4rem;
+}
+
+.videoZone .videoBox .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videoZone .videoBox .infor {
+    width: 480px;
+}
+
+.videoZone .videoBox h5 {
+    font-size: 0.43rem;
+    color: #494646;
+    line-height: 0.61rem;
+    margin: 0.47rem 0;
+}
+
+.videoZone .videoBox .ellipsis {
+    -webkit-line-clamp: 3;
+    font-size: 0.33rem;
+    color: #747474;
+    line-height: 0.65rem;
+}
+
+.videoZone .videoBox .ellipsis-line2 {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.videoZone .videoBox .content {
+    margin: 0 auto;
+}
+
+.videoZone .videoBox .item {
+    margin: -2rem auto 2.4rem;
+}
+
+.videoZone .videoBox:nth-child(even) .content {
+    flex-direction: row-reverse;
+}
+
+.videoZone .videoBox:last-child .content {
+    margin-bottom: 1.13rem;
+}
+
+.videoZone button {
+    font-size: 14px;
+    width: 190px;
+    height: 66px;
+    background: #0A7E3C;
+    margin: 75px auto 145px;
+    display: block;
+}
+
+.videoZone button img {
+    width: 16px;
+}
+
+.advantage {
+    width: 100%;
+    padding: 0.3rem 0;
+    background: #F0F0F0;
+}
+
+.advantage .item .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.advantage .item .tit {
+    display: flex;
+    align-items: center;
+}
+
+.advantage .item .tit img {
+    width: 80px;
+    margin-right: 25px;
+}
+
+.advantage .item .tit p {
+    font-size: 40px;
+    color: #0F4928;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.advantage .item .tit p::after {
+    content: "";
+    width: 30px;
+    height: 6px;
+    background: #18663A;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.advantage .item .text {
+    width: 680px;
+    margin: 64px 0 0;
+    font-size: 18px;
+    color: #646464;
+    line-height: 36px;
+    text-indent: 36px;
+    text-align: justify;
+}
+
+.advantage .item .imgBox {
+    position: relative;
+}
+
+.advantage .item .imgBox img {
+    width: 482px;
+    height: 500px;
+    margin-left: 0.32rem;
+    margin-bottom: 0.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.advantage .item .imgBox .block {
+    position: absolute;
+    width: 6.77rem;
+    height: 3.73rem;
+    background: #C4D963;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.advantage .item:nth-child(even) {
+    background: #ffffff;
+}
+
+.advantage .item:nth-child(even) .content {
+    flex-direction: row-reverse;
+}
+
+.page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+}
+
+.errorBox {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    margin-top: -250px;
+    margin-left: -250px;
+    text-align: center;
+}
+
+.errorBox img {
+    width: 100%;
+    margin-bottom: -60px;
+}
+
+.errorBox h5 {
+    font-size: 60px;
+    color: #231815;
+    line-height: 1;
+    margin: 0;
+}
+
+.errorBox p {
+    font-size: 22px;
+    color: #6B6B6B;
+    line-height: 36px;
+}
